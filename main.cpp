@@ -7,7 +7,8 @@
 #include "searchmatrix.h"
 #include "compress-decompression.h"
 #include "reversenodeskgroups.h"
-
+#include "uglynumber.h"
+#include "splitlist.h"
 int main() {
     /*
     auto sln = AsteroidCollision();
@@ -38,10 +39,19 @@ int main() {
     std::cout << Decompressor().decompress(compressed);
     */
 
+    /*
     std::vector<int> v = {1, 2, 3, 4, 5};
     ListNode *list = makeList(v);
     list = Solution().reverseKGroup(list, 2);
     deleteList(list);
+    */
+
+    //std::cout << Ugly().nthUglyNumber(16500);
+
+    vector<int> nums{1,2,3,4,5,6,7,8,9,10};
+    ListNode* l = makeList(nums);
+    Split().splitListToParts(l, 3);
+
 
 }
 

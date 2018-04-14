@@ -23,6 +23,7 @@ std::vector<std::vector<int>> Partitioner::partiton(std::vector<int> &nums, int 
         sumLeft[i] = sum/k;
     }
 
-    bool res = !(sum % k) && subsetSums()
+    // for each element, place it in every
+    bool res = !(sum % k);
 }
 
