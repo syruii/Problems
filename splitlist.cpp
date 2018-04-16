@@ -8,7 +8,6 @@
 #include "splitlist.h"
 
 vector<ListNode *> Split::splitListToParts(ListNode *root, int k) {
-
     int size = 0;
     ListNode *curr = root;
     while (curr != NULL) {

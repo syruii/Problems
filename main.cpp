@@ -9,6 +9,7 @@
 #include "reversenodeskgroups.h"
 #include "uglynumber.h"
 #include "splitlist.h"
+#include "num2string.h"
 int main() {
     /*
     auto sln = AsteroidCollision();
@@ -48,10 +49,20 @@ int main() {
 
     //std::cout << Ugly().nthUglyNumber(16500);
 
+    /*
     vector<int> nums{1,2,3,4,5,6,7,8,9,10};
     ListNode* l = makeList(nums);
     Split().splitListToParts(l, 3);
+    */
 
+    std::cout << HumanString().toWord(64722) << std::endl;
+    std::cout << HumanString().toWord(3) << std::endl;
+    std::cout << HumanString().toWord(0) << std::endl;
+    std::cout << HumanString().toWord(14) << std::endl;
+    std::cout << HumanString().toWord(214) << std::endl;
+    std::cout << HumanString().toWord(200) << std::endl;
+    std::cout << HumanString().toWord(15001) << std::endl;
+    std::cout << HumanString().toWord(320) << std::endl;
 
 }
 
