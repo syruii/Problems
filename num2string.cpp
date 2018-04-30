@@ -75,4 +75,9 @@ std::string HumanString::toWordInt(std::string num) {
      * Returns the string of digits as a sequence
      * 999333310 : four nines four threes one zero
      */
+    std::string nums[] = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
+                            "eleven", "twelve", "thirteen", "fourteen", "fifteen"};
+    // increment count until you reach either the end of the string or a non matching digit
+    // count to num
+    // if count > 1 add additonal s onto digit
 }
