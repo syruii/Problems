@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <utility>
 #include "asteroid-collision.h"
 #include "wildcardmatching.h"
 #include "median-sorted.h"
@@ -10,6 +11,7 @@
 #include "uglynumber.h"
 #include "splitlist.h"
 #include "num2string.h"
+#include "phonenumberletters.h"
 int main() {
     /*
     auto sln = AsteroidCollision();
@@ -55,6 +57,7 @@ int main() {
     Split().splitListToParts(l, 3);
     */
 
+    /*
     std::cout << HumanString().toWord(64722) << std::endl;
     std::cout << HumanString().toWord(3) << std::endl;
     std::cout << HumanString().toWord(0) << std::endl;
@@ -63,7 +66,13 @@ int main() {
     std::cout << HumanString().toWord(200) << std::endl;
     std::cout << HumanString().toWord(15001) << std::endl;
     std::cout << HumanString().toWord(320) << std::endl;
+    */
 
+    std::vector<string> res = phonenumberletters().letterCombinations("23");
+    for (auto it = res.begin();it != res.end(); ++it) {
+        std::cout << *it << ' ';
+    }
+    std::cout << std::endl;
 }
 
 
