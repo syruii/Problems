@@ -12,6 +12,9 @@
 #include "splitlist.h"
 #include "num2string.h"
 #include "phonenumberletters.h"
+#include "binarytreefactors.h"
+#include "contiguousbinary.h"
+
 int main() {
     /*
     auto sln = AsteroidCollision();
@@ -68,11 +71,21 @@ int main() {
     std::cout << HumanString().toWord(320) << std::endl;
     */
 
+    /*
     std::vector<string> res = phonenumberletters().letterCombinations("23");
     for (auto it = res.begin();it != res.end(); ++it) {
         std::cout << *it << ' ';
     }
     std::cout << std::endl;
+    */
+
+    /*
+    vector<int> nums{2, 4, 5, 10, 12, 14, 16, 20, 22, 16};
+    std::cout << binarytreefactors().numFactoredBinaryTrees(nums) << std::endl;
+    */
+
+    vector<int> nums{0, 1, 1, 0, 1, 1, 1, 0};
+    std::cout << contiguousbinary().findMaxLength(nums) << std::endl;
 }
 
 
