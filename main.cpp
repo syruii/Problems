@@ -14,6 +14,7 @@
 #include "phonenumberletters.h"
 #include "binarytreefactors.h"
 #include "contiguousbinary.h"
+#include "kpartition.h"
 
 int main() {
     /*
@@ -83,9 +84,19 @@ int main() {
     vector<int> nums{2, 4, 5, 10, 12, 14, 16, 20, 22, 16};
     std::cout << binarytreefactors().numFactoredBinaryTrees(nums) << std::endl;
     */
-
+    /*
     vector<int> nums{0, 1, 1, 0, 1, 1, 1, 0};
     std::cout << contiguousbinary().findMaxLength(nums) << std::endl;
+    */
+
+    vector<int> nums{4,3,2,3,5,2,1};
+    vector<vector<int>> res = Partitioner().partiton(nums, 4);
+    for (auto& v: res) {
+        for (int i : v) {
+            cout << i << " ";
+        }
+        cout << endl;
+    }
 }
 
 

@@ -8,9 +8,7 @@
 
 class Partitioner {
 public:
-    std::vector<std::vector<int>> partiton(std::vector<int> &nums, int sum, int k);
-private:
-    bool checkSum(int sumLeft[], int k);
+    std::vector<std::vector<int>> partiton(std::vector<int> &nums, int k);
 };
 
 
